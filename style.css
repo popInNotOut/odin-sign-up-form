@@ -1,0 +1,212 @@
+/* START OF GENERAL SETUP */
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norsebold';
+    src: url('fonts/Norsebold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 14px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    /* flex-direction: row; */
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul {
+    margin: 0;
+}
+/* END OF GENERAL SETUP */
+
+
+
+/* START OF TYPOGRAPHY */
+div#left-side {
+    flex: 0 0 30%; /* 30% width */
+    min-height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div#left-side div#logo-div {
+    margin-top: 21cqh;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+div#left-side div#logo-div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+div#left-side div#logo-div div#odin-logo-text{
+    font-family: 'Norsebold', 'Norse', sans-serif;
+    font-size: 6rem;
+    color: white;
+}
+
+div#left-side div#logo-img-credits{
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2cqh 0;
+}
+
+div#left-side div#logo-img-credits a{
+    color: white;
+    margin: 0 0.3rem;
+}
+
+div#right-side {
+    /* flex: 0 0 70%; */ /* This one also works (alternative) */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div#right-side div#card-1 {
+    flex: 0 0 35%;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+div#right-side div#card-1 div#text-container{
+    padding: 0rem 3em 5rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div#right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div#right-side form#form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div#right-side form#form-container div#form-top {
+    flex: 0 0 45%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem 2rem 3rem;
+}
+
+div#right-side form#form-container div#form-top div#form-header-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+div#right-side form#form-container div#form-top div#input-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div#right-side form#form-container div#form-top div#input-container div.input-container-line{
+    display: flex;
+    gap: 4cqw;
+}
+
+div#right-side form#form-container div#form-top div#input-container div.input-container-line div.input-container-field{
+    display: flex;
+    flex-direction: column;
+}
+
+div#right-side form#form-container div#form-top div#input-container div.input-container-line div.input-container-field label{
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.1rem;
+}
+
+div#right-side form#form-container div#form-top div#input-container div.input-container-line div.input-container-field input{
+    border-radius: 0.4rem;
+    border: 1px solid #E5E7EB;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+div#right-side form#form-container div#form-top div#input-container div.input-container-line div.input-container-field input:invalid{
+    border: 0.2rem solid red;
+    background-color: #ffebee; /* Light red background */
+}
+
+div#right-side form#form-container div#form-top div#input-container div.input-container-line div.input-container-field input:focus{
+    border: 0.2rem solid blue;
+    background-color: #ebf0ff; /* Light blue background */
+}
+
+div#right-side form#form-container div#form-bottom{
+    flex: 1;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: column;
+}
+
+div#right-side form#form-container div#form-bottom button#submit-button {
+    display: block;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #596D48;
+    border-radius: 0.8rem;
+    border: none;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+div#right-side form#form-container div#form-bottom button#submit-button:hover {
+    background-color: rgb(0, 77, 23);
+}
+
+div#right-side form#form-container div#form-bottom p#already-have-account-text {
+    margin-left: 4rem;
+    font-size: 1.2rem;
+}
+
+div#right-side form#form-container div#form-bottom p#already-have-account-text a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+/* END OF TYPOGRAPHY */

@@ -3,9 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Sign-Up Form</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <div id="left-side">
+            <div id="logo-div">
+                <img src="images/odin-lined.png" alt="Odin Logo">
+                <div id="odin-logo-text">Odin</div>
+            </div>
+            <div id="logo-img-credits">
+                Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+            </div>
+        </div>
+        <div id="right-side">
+            <div id="card-1">
+                <div id="text-container">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up
+                    <em>now</em> to get started.<br><br>You <em>know</em> you want to.
+                </div>
+            </div>
+
+            <form id="form-container">
+                <div id="form-top">
+                    <div id="form-header-text">
+                        Let's do this!
+                    </div>
+                    <div id="input-container">
+                        <div class="input-container-line">
+                            <div class="input-container-field">
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text" id="first_name" name="first_name">
+                            </div>
+                            <div class="input-container-field">
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" id="last_name" name="last_name">
+                            </div>
+                        </div>
+                        <div class="input-container-line">
+                            <div class="input-container-field">
+                                <label for="email">EMAIL</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="input-container-field">
+                                <label for="phone_number">PHONE NUMBER</label>
+                                <input type="text" id="phone_number" name="phone_number">
+                            </div>
+                        </div>
+                        <div class="input-container-line">
+                            <div class="input-container-field">
+                                <label for="password">PASSWORD</label>
+                                <input type="text" id="password" name="password" required>
+                            </div>
+                            <div class="input-container-field">
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="text" id="confirm_password" name="confirm-password" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="form-bottom">
+                    <button type="submit" id="submit-button">Create Account</button>
+                    <p id="already-have-account-text">Already have an account? <a href="javascript:void(0)">Log In</a></p>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
